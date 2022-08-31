@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import useLocalStorage from "use-local-storage";
+
 
 import {
   BrowserRouter as Router,
@@ -22,16 +22,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [load, upadateLoad] = useState(true);
   
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  }
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
-
 
 
   useEffect(() => {
@@ -48,10 +38,10 @@ function App() {
       <Preloader load={load} />
       
       
-      <div className="App" id={load ? "no-scroll" : "scroll"}  data-theme={theme}
+      <div className="App" id={load ? "no-scroll" : "scroll"}  
       >
        
-        <Navbar switchTheme={switchTheme} />
+        <Navbar  />
        
         <ScrollToTop />
         <Routes>
