@@ -11,10 +11,6 @@ a {
   color: #be6adf !important;
    
 }
-[data-theme="light"] {
-  --imp-text-color: #CC05AC;
-
-}
 
 
 html {
