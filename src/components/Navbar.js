@@ -9,7 +9,6 @@ import { CgPill } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,

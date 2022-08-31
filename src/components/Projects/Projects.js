@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col,  } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { CgArrowTopLeftR } from "react-icons/cg";
-import { Link, useParams } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import {GraphQLClient, gql} from 'graphql-request';
 
 
